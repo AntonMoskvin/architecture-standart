@@ -1,0 +1,45 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+' Участники
+Person(client, "Клиент", "Подаёт заявку на депозит")
+Person(teller, "Сотрудник отделения", "Работает с клиентом в отделении")
+Person(deposit_manager, "Менеджер депозитов", "Подтверждает заявки в бэк-офисе")
+
+' Системы банка
+System_Boundary(bank, "Банк «Стандарт»") {
+    System(internet_banking, "Интернет-банк", "Подача заявки на депозит")
+    System(website, "Сайт", "Маркетинг и подача заявки")
+    System(abc, "АБС", "Учёт депозитов, бухгалтерия, ставки")
+}
+
+' Внешние системы
+System_Ext(sms_gateway, "СМС-шлюз", "Интеграция с телеком-оператором")
+System_Ext(call_center, "Система кол-центра", "Обработка звонков и заявок")
+System_Ext(telecom_operator, "Телеком-оператор", "Доставка SMS клиентам")
+
+' Связи
+client --> internet_banking : 1. Подача заявки
+client --> website : 2. Подача заявки
+website --> call_center : 3. Передача заявки
+call_center --> abc : 4. Информация по клиенту
+client --> teller : 5. Приходит в отделение
+teller --> abc : 6. Создание депозита
+deposit_manager --> abc : 7. Подтверждение ставки
+internet_banking --> abc : 8. Передача заявки
+abc --> sms_gateway : 9. Уведомление о ставке
+sms_gateway --> telecom_operator : 10. Доставка SMS
+telecom_operator --> client : 11. Получение SMS
+
+' Легенда
+legend right
+  **Контекст системы**
+  Показывает взаимодействие
+  интернет-банка и сайта
+  с внутренними и внешними
+  системами.
+end legend
+
+@enduml

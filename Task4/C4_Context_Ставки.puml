@@ -1,0 +1,35 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' Горизонтальное направление — лучше для линейных процессов
+left to right direction
+
+LAYOUT_WITH_LEGEND()
+
+' Участники и системы — явно выстроены слева направо
+Person(deposit_manager, "Менеджер депозитов", "Обновляет ставки в Rate Engine")
+
+System(rate_engine, "Rate Engine", "Центральное хранилище ставок по депозитам")
+
+System(call_center_system, "Система кол-центра", "Получает ставки через API")
+
+System_Ext(sftp_server, "SFTP-сервер", "Файловое хранилище для партнёра")
+
+System_Ext(partner_call_center, "Партнёрский кол-центр", "Забирает файл со ставками")
+
+' Связи — с нумерацией, чтобы контролировать порядок
+deposit_manager --> rate_engine : 1. Обновляет ставки
+rate_engine --> call_center_system : 2. API: Передача ставок
+rate_engine --> sftp_server : 3. Выкладывает CSV-файл
+sftp_server --> partner_call_center : 4. Забирает файл
+
+' Легенда
+legend right
+  **C4: Диаграмма контекста**
+  Показывает, как ставки
+  доходят до своего и
+  партнёрского кол-центра.
+  Все связи — односторонние.
+end legend
+
+@enduml

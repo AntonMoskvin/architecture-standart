@@ -1,0 +1,157 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
+  <diagram name="Страница — 1" id="01Nv7Oq90rE-AEtU9Ci4">
+    <mxGraphModel dx="2066" dy="1119" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-2" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="39" y="40" width="1561" height="1234" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-30" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry width="1561" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-31" value="Элементы организационной структуры" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-30">
+          <mxGeometry width="391" height="72" as="geometry">
+            <mxRectangle width="391" height="72" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-32" value="Бизнес-возможности второго уровня" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-30">
+          <mxGeometry x="391" width="585" height="72" as="geometry">
+            <mxRectangle width="585" height="72" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-33" value="Комментарии" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-30">
+          <mxGeometry x="976" width="585" height="72" as="geometry">
+            <mxRectangle width="585" height="72" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-7" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="72" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-8" value="&lt;div align=&quot;left&quot;&gt;&lt;font&gt;&lt;strong&gt;Интернет-банк.&lt;/strong&gt;&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-7">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-9" value="&lt;div align=&quot;left&quot;&gt;- Онлайн-обслуживание клиентов&lt;br&gt;- Проведение платежей&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-7">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-34" value="&lt;div align=&quot;left&quot;&gt;- Не поддерживает открытие депозитов&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;- Интегрирован с АБС напрямую через БД&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-7">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-35" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="238" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-36" value="&lt;strong&gt;Автоматизированная банковская система (АБС).&lt;/strong&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-35">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-37" value="&lt;br&gt;&lt;div align=&quot;left&quot;&gt;- Обслуживание клиентов в отделениях&lt;br&gt;- Открытие депозитов и накопительных счетов&lt;br&gt;- Отправка уведомлений клиентам&lt;br&gt;- Управление кредитными продуктами&lt;br&gt;- Управление депозитными продуктами (частично, через данные)&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-35">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-38" value="- Центральная система&lt;br&gt;- Используется фронт-офисом и бэк-офисом&lt;br&gt;- Поддерживает СМС-уведомления через интеграцию" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-35">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-39" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="404" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-40" value="&#xa;&lt;strong&gt;Система кол-центра&lt;/strong&gt;. &#xa;&#xa;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-39">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-41" value="&lt;div align=&quot;left&quot;&gt;- Поддержка клиентов по телефону&lt;br&gt;- Открытие депозитов и накопительных счетов (через создание обращений)&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-39">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-42" value="- Обращения передаются в АБС&lt;br&gt;- Позволяет предварительно инициировать процесс открытия депозита" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-39">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-47" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="570" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-48" value="&#xa;&lt;strong&gt;Система партнёрского кол-центра.&lt;/strong&gt;&#xa;&#xa;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-47">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-49" value="&lt;div align=&quot;left&quot;&gt;- Поддержка клиентов по телефону&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-47">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-50" value="- Работает по скриптам от банка&lt;br&gt;- Нет интеграции с АБС или системой кол-центра" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-47">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="736" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-52" value="&lt;strong&gt;СМС-шлюз телеком-оператора.&lt;/strong&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-51">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-53" value="&lt;div align=&quot;left&quot;&gt;- Отправка уведомлений клиентам&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-51">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-54" value="- Используется АБС для автоматических уведомлений (например, о готовности ставки)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-51">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-55" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="902" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-56" value="&lt;strong&gt;Телеком-оператор (внешний)&lt;/strong&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-55">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-57" value="- Отправка уведомлений клиентам" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-55">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-58" value="- Не имеет прямой интеграции с банком&lt;br&gt;- Является конечным звеном доставки уведомлений&lt;br&gt;- Ответственен за доставку, доступность и задержки сообщений" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-55">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-59" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-2">
+          <mxGeometry y="1068" width="1561" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-60" value="&lt;strong&gt;Сайт.&lt;/strong&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-59">
+          <mxGeometry width="391" height="166" as="geometry">
+            <mxRectangle width="391" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-61" value="- Онлайн-обслуживание клиентов (маркетинговая информация)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-59">
+          <mxGeometry x="391" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jY3sMp6sgDNgz-QuqYWw-62" value="- Только информационная функция&lt;br&gt;-&amp;nbsp;&lt;span data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i25.3148c921iZY1OX&quot;&gt;Не поддерживает подачу заявок&lt;/span&gt; (пока)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="jY3sMp6sgDNgz-QuqYWw-59">
+          <mxGeometry x="976" width="585" height="166" as="geometry">
+            <mxRectangle width="585" height="166" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

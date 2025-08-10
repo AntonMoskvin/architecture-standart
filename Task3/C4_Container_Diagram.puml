@@ -1,0 +1,77 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+' Горизонтальное направление для линейного процесса
+left to right direction
+
+' Показать легенду
+LAYOUT_WITH_LEGEND()
+
+' =============== УЧАСТНИКИ ===============
+Person(client, "Клиент", "Подаёт заявку на депозит в интернет-банке")
+
+Person(deposit_manager, "Менеджер депозитов", "Подтверждает заявки в АБС (MVP)")
+
+' =============== КОНТЕЙНЕРЫ ВНУТРИ БАНКА ===============
+Container_Boundary(bank, "Банк «Стандарт»", "Внутренние системы") {
+
+    Container(internet_banking, "Интернет-банк", "ASP.NET MVC 4.5, MS SQL", "Подача заявки на депозит. Не изменяет ядро.")
+
+    Container(rate_engine, "Rate Engine", "Java Spring Boot, MS SQL", "Рассчитывает персонализированные ставки. Изолирует АБС от нагрузки.")
+
+    Container(kafka, "Kafka", "Очередь сообщений", "Асинхронная передача заявок. Защита АБС от прямых вызовов.")
+
+    Container(claim_processor, "Служба обработки заявок", ".NET 4.5, MS SQL", "Читает заявки из Kafka и передаёт в АБС.")
+
+    Container(abc, "АБС", "Delphi + Oracle (PL/SQL)", "Основная система учёта. Создание депозита, бухгалтерия.")
+
+}
+
+' =============== ВНЕШНИЕ СИСТЕМЫ ===============
+Container(sms_gateway, "СМС-шлюз", "HTTP API", "Интеграция с телеком-оператором для уведомлений")
+
+Container_Ext(telecom_operator, "Телеком-оператор", "Внешний провайдер доставки SMS")
+
+' =============== СВЯЗИ (с нумерацией) ===============
+client --> internet_banking : 1. Подача заявки
+internet_banking --> rate_engine : 2. Получить ставку
+internet_banking --> kafka : 3. Отправить заявку в очередь
+kafka --> claim_processor : 4. Обработка заявки
+claim_processor --> abc : 5. Передача в АБС
+deposit_manager --> abc : 6. Подтверждение (MVP)
+abc --> sms_gateway : 7. СМС: ставка подтверждена
+sms_gateway --> telecom_operator : 8. Доставка
+telecom_operator --> client : 9. Получение SMS
+
+' =============== ПОЯСНЕНИЯ ===============
+note right of rate_engine
+  **Rate Engine**
+  - Новый микросервис
+  - Расчёт ставок вне АБС
+  - Java + MS SQL
+  - Экспертиза в команде АБС
+end note
+
+note right of kafka
+  **Kafka**
+  - Асинхронная очередь
+  - Защита АБС от нагрузки
+  - Поддержка масштабирования
+end note
+
+note right of claim_processor
+  **Служба обработки**
+  - На .NET — совместима с интернет-банком
+  - Не требует изменений ядра
+end note
+
+' =============== ЛЕГЕНДА ===============
+legend right
+  **C4: Диаграмма контейнеров (MVP)**
+  Показывает поток заявки
+  от клиента до АБС
+  через промежуточные компоненты.
+  Все внешние системы серые.
+end legend
+
+@enduml

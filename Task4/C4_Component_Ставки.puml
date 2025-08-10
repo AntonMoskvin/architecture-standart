@@ -1,0 +1,43 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+Container(rate_engine, "Rate Engine", "Java Spring Boot, MS SQL", "Центральное хранилище ставок")
+
+ContainerDb(rate_engine_db, "БД ставок", "MS SQL", "Хранение актуальных ставок")
+
+Container(call_center_api, "API для ставок", "REST", "Интеграция с системой кол-центра")
+
+Container(export_service, "Служба экспорта", "cron + Java", "Формирует CSV и выкладывает на SFTP")
+
+Container(sftp_server, "SFTP-сервер", "OpenSSH", "Файловое хранилище")
+
+' Связи
+rate_engine_db <--> rate_engine : Чтение/запись
+rate_engine --> call_center_api : 1. Предоставляет ставки
+rate_engine --> export_service : 2. Запускает экспорт
+export_service --> sftp_server : 3. Выкладывает CSV
+sftp_server .> export_service : 4. Подтверждение
+
+note right of call_center_api
+  **REST API**
+  - Формат: JSON
+  - Аутентификация: API Key
+  - Частота: по запросу
+end note
+
+note right of export_service
+  **Экспорт в CSV**
+  - Запуск: ежедневно в 9:00
+  - Путь: /rates/deposits.csv
+  - Кодировка: UTF-8
+end note
+
+legend right
+  **C4: Диаграмма компонентов**
+  Детализация Rate Engine
+  и процесса передачи ставок.
+end legend
+
+@enduml
